@@ -1,3 +1,4 @@
+
 body {  
     font-family: Arial, sans-serif;  
     margin: 0;  
@@ -5,6 +6,7 @@ body {
     background-color: #f5f5f5;  
 }  
   
+
 header {  
     background-color: #ff893b;  
     color: white;  
@@ -24,26 +26,18 @@ nav a {
     text-decoration: none;  
 }  
   
-.banner {  
-    background-image: url('piuter//0.jpg');  
-    height: 500px;  
-    background-size: cover;  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-    color: white;  
-    font-size: 2em;  
-}  
+
+
   
-/*卡片间距*/  
+
 .products {  
     display: flex;  
     flex-wrap: wrap;  
     justify-content: space-around;  
-    padding: 200px;  
-}  
+    padding: 200px;
+}
   
-/*外卡片*/  
+
 .product {  
     background: white;  
     border-radius: 30px;  
@@ -52,15 +46,79 @@ nav a {
     padding: 10px;  
     width: 200px;  
     text-align: center;  
- 
-}  
+    position: relative; 
+    overflow: hidden; 
+    position: relative;  
+    z-index: 2;  
+
+    &:hover {
+        color: white;
+        transition: color 1s ease;
+        transition: opacity 3s ease;
+    }
+   }  
+
+
   
-/*卡片图片*/  
+ 
 .product img {  
     max-width: 100%;  
     border-radius: 30px;  
 }  
   
+  
+
+.product::before {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--main-color, rgba(0, 0, 0, 0));
+pointer-events: none;
+transition: top 0.5s ease, background-color 0.5s ease;
+z-index: -1;  
+}
+
+
+.product:nth-child(1)::before {  
+    --main-color: var(--product1-main-color); /* 蓝 */  
+}  
+  
+.product:nth-child(2)::before {  
+    --main-color: var(--product2-main-color); /* 粉 */  
+}  
+  
+.product:nth-child(3)::before {  
+    --main-color: var(--product3-main-color); /* 棕 */  
+}  
+  
+
+:root {  
+    --product1-main-color: rgba(0, 191, 255, 0.84);  
+    --product2-main-color: rgba(255, 39, 107, 0.5);  
+    --product3-main-color: rgba(61, 53, 14, 0.658);  
+    --hover-color-opacity: 0.7;  
+}  
+  
+
+.zoom-blur {  
+    transition: transform 0.5s ease, filter 0.5s ease;  
+    transform-origin: center center;  
+}  
+  
+.product:hover .zoom-blur {  
+    transform: scale(1.25);  
+    filter: blur(0px);  
+}  
+  
+.product:hover::before {  
+    top: 0;  
+    background-color: var(--main-color, rgba(0, 0, 0, var(--hover-color-opacity))); 
+}  
+  
+
 footer {  
     background-color: rgb(116, 116, 116);  
     color: white;  
@@ -71,6 +129,7 @@ footer {
     width: 100%;  
 }  
   
+ 
 .butten {  
     display: inline-block;  
     padding: 15px 32px;  
@@ -80,7 +139,10 @@ footer {
     border-radius: 8px;  
 }  
   
+
 .element {  
     filter: blur(5px);  
 }
- 
+.container:hover {
+    color: white;
+  }
