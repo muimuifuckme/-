@@ -27,9 +27,6 @@ nav a {
 }  
   
 
-
-  
-
 .products {  
     display: flex;  
     flex-wrap: wrap;  
@@ -83,19 +80,19 @@ z-index: -1;
 
 
 .product:nth-child(1)::before {  
-    --main-color: var(--product1-main-color); /* 蓝 */  
+    --main-color: var(--product1-main-color); /* 1 */  
 }  
   
 .product:nth-child(2)::before {  
-    --main-color: var(--product2-main-color); /* 粉 */  
+    --main-color: var(--product2-main-color); /* 2 */  
 }  
   
 .product:nth-child(3)::before {  
-    --main-color: var(--product3-main-color); /* 棕 */  
+    --main-color: var(--product3-main-color); /* 3 */  
 }  
   
 
-:root {  
+:root {                    /*自定义颜色元素*/     
     --product1-main-color: rgba(0, 191, 255, 0.84);  
     --product2-main-color: rgba(255, 39, 107, 0.5);  
     --product3-main-color: rgba(61, 53, 14, 0.658);  
@@ -103,13 +100,13 @@ z-index: -1;
 }  
   
 
-.zoom-blur {  
+.zoom-blur {                 /*放大*/
     transition: transform 0.5s ease, filter 0.5s ease;  
     transform-origin: center center;  
 }  
   
 .product:hover .zoom-blur {  
-    transform: scale(1.25);  
+    transform: scale(1.2);  
     filter: blur(0px);  
 }  
   
@@ -119,7 +116,7 @@ z-index: -1;
 }  
   
 
-footer {  
+footer {               /*页脚样式*/
     background-color: rgb(116, 116, 116);  
     color: white;  
     text-align: center;  
@@ -130,7 +127,7 @@ footer {
 }  
   
  
-.butten {  
+.butten {               /*按钮样式*/
     display: inline-block;  
     padding: 15px 32px;  
     background-color: #ff6700;  
@@ -140,9 +137,12 @@ footer {
 }  
   
 
-.element {  
+.element {                /*暂时没啥用的高斯模糊class*/
     filter: blur(5px);  
 }
+
 .container:hover {
     color: white;
   }
+
+  

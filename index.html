@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<meta charset="UTF-8">
 
 <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>萝莉控~~~</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"> <!-- 视口设置 -->  
+    <meta name="renderer" content="webkit"> <!-- 设置渲染引擎为webkit兼容webkit浏览器 -->  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 设置IE浏览器以最新的渲染模式显示页面 -->  
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!-- 禁止页面转应用 -->  
+    <meta name="referrer" content="no-referrer"> <!-- 不发送Referer头防曝光 --> 
+    <meta name="description" content="认真你就输了">
+    <title>你也想要3年吗？</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link rel="stylesheet" type="text/css" href="css\dock lan.css">
+    <link rel="stylesheet" type="text/css" href="css\dock lan 0.css">
+    <script src="js\head.js"></script>
+    <script src="js\look.js"></script>
+    <script src="js\player.js"></script>
+   
    
 </head>
 
@@ -14,26 +25,64 @@
     <style>
     .banner {                                          /*定义选择器*/
         background-image: url('piuter//0.jpg');        /*背景图*/
-        height: 500px;                                 /*高*/
-        background-size: cover;                        /*图铺自适应满元素*/
+        height: 800px;                                 /*高*/
+        background-size: cover;                        /*自适应*/
         display: flex;                                 /*flex*/
         justify-content: center;                       /*水平居中*/
         align-items: center;                           /*垂直居中*/
-        color: rgb(254, 152, 97);                                /*文字颜色*/
+        color: rgb(254, 152, 97);                    /*文字颜色*/
         font-size: 2em;                                /*2x*/
         position: relative;                            /*相对定位*/
+      
     }  
+
+    /* 重置一些默认的样式 */  
+    body, ul, li, a {  
+    margin: 0;  
+    padding: 0;  
+    list-style: none;  
+    text-decoration: none;  
+}  
+  
+
+
     </style>
 
-
-    <header>
-        <h1><del>萝莉控</del>の秘密基地</h1>
-    </header>
+<div>
+    <!--白-->
+    <nav class="navbar"> 
+        <div class="navbar-logo">  
+            <a href="#home"><img src="piuter\logo.png" alt="网站Logo"></a>  
+        </div> 
+        <ul class="navbar-list">  
+            <li class="navbar-item"><a href="">首页</a></li>  
+            <li class="navbar-item"><a href="没有">小男娘</a></li>     
+            <li class="navbar-item"><a href="没有">合法萝莉</a></li>  
+            <li class="navbar-item"><a href="没有">非法萝莉</a></li>  
+            <li class="navbar-item"><a href="html\更多.html">更多？</a></li> 
+            <li class="navbar-item"><a href="html\日志.html" title="更新日志">日志（2级菜单还...</a></li> 
+        </ul>  
+    </nav>
+    <!--黑-->
+    <nav class="navbar2"> 
+        <div class="navbar2-logo">  
+            <a href="#home"><img src="piuter\logo.png" alt="网站Logo"></a>  
+        </div> 
+        <ul class="navbar2-list">  
+            <li class="navbar2-item"><a href="">首页</a></li>  
+            <li class="navbar2-item"><a href="没有">小男娘</a></li>  
+            <li class="navbar2-item"><a href="没有">合法萝莉</a></li>  
+            <li class="navbar2-item"><a href="没有">非法萝莉</a></li>  
+            <li class="navbar2-item"><a href="html\更多.html">更多？</a></li>
+            <li class="navbar2-item"><a href="html\日志.html" title="更新日志">日志（2级菜单还...</a></li>  
+        </ul>  
+    </nav>
+</div>
 
     <div class="banner">
         —————————————— 萝莉控不是病...而是一种生存方式 ——————————————
     </div>
-    <!-- 左 -->
+    <!-- 1 -->
     <div class="products">
         <div class="product">
             <img src="piuter/1.png" alt="产品1" class="zoom-blur">
@@ -41,23 +90,25 @@
             <p>价格: ¥9999</p>
             <a href="https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default"class=butten>原神启动</a> 
         </div>
-        <!-- 中 -->
+        <!-- 2 -->
         <div class="product">
             <img src="piuter/2.png" alt="产品2" class="zoom-blur">
             <br><br><br><h2>小米房地产</h2><br><br><hr>
             <p>价格: ¥9999</p>
             <a href="https://download.kurogames.com/transfer/mc_WnGtDn85y8lJB4mTmYHYuNjIl9n6YGVm/official/cn/zh-Hans/pc_app"class=butten>元末明初</a>      
         </div>
-        <!-- 右 -->
+        <!-- 3 -->
         <div class="product">
             <img src="piuter/3.png" alt="产品3" class="zoom-blur">
             <div class="">
-                <br><br><h2>米家F-36战斗轰炸机</h2><br><hr>
+                <br><br><h2>米家F-36</h2><br><hr>
             </div>
             <p>价格: ¥9999</p>
             <a href="https://www.mihoyo.com/?page=join"class=butten>爆炒mhy</a>
         </div>
     </div>
+
+    <audio id="audioPlayer" src="static\ciallo.aac" preload="auto"></audio>
 
     <footer>
         <p><a href="https://www.mihoyo.com/company/jubao">mhy保留所有权利.</a></p>
