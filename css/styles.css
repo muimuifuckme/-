@@ -39,7 +39,7 @@ nav a {
     background: white;  
     border-radius: 30px;  
     box-shadow: 0 2px 10px rgba(153, 153, 153, 0.1);  
-    margin: 10px;  
+    margin: 20px;  
     padding: 10px;  
     width: 200px;  
     text-align: center;  
@@ -89,13 +89,17 @@ z-index: -1;
   
 .product:nth-child(3)::before {  
     --main-color: var(--product3-main-color); /* 3 */  
-}  
+} 
+.product:nth-child(4)::before {  
+    --main-color: var(--product4-main-color); /* 4 */  
+}   
   
 
 :root {                    /*自定义颜色元素*/     
     --product1-main-color: rgba(0, 191, 255, 0.84);  
     --product2-main-color: rgba(255, 39, 107, 0.5);  
-    --product3-main-color: rgba(61, 53, 14, 0.658);  
+    --product3-main-color: rgba(255, 0, 0, 0.658);  
+    --product4-main-color: rgba(255, 213, 0, 0.658);
     --hover-color-opacity: 0.7;  
 }  
   
