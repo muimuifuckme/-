@@ -1,0 +1,61 @@
+/*这里负责白导航栏相关*/
+/* 样式 */  
+.navbar {    
+    background-color: #ffffff;    
+    overflow: hidden;    
+    position: fixed;    
+    top: 0;    
+    width: 100%;    
+    z-index: 114514;  
+    display: flex;  
+    align-items: center;  
+    padding: 0 50px;    
+    height: 90px;  
+    opacity: 0; /* 初始隐藏 */  
+    transform: translateY(-100%); /* 初始时移出视口 */  
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+}  
+.navbar.visible {  
+    opacity: 1; /* 显示 */  
+    transform: translateY(0); /* 移回视口 */
+}
+  
+
+.navbar-list {  
+    display: flex;  
+    justify-content: flex-start; 
+}  
+  
+
+.navbar-item {  
+    padding: 45px 30px; 
+}  
+  
+/* 按钮 */  
+.navbar-item a {  
+    color: rgb(0, 0, 0);  
+    font-size: 18px;  
+    display: block;  
+    transition: background-color 0.5s, color 0.5s; 
+}  
+  
+/* 鼠标悬停 */  
+.navbar-item a:hover {  
+    color: #ff00b3;  
+    
+} 
+  
+main {  
+    margin-top: 60px;  
+    padding: 20px;  
+}  
+  
+.navbar-logo {  
+    flex-shrink: 0; 
+    margin-right: 25px; 
+}  
+  
+.navbar-logo img {  
+    height: 40px; 
+    width: auto;  
+}

@@ -1,26 +1,27 @@
-/*这里负责导航栏相关*/
+/*这里负责黑导航栏相关*/
 .navbar2 {  
-    background-color: #17171745;  
+    background-color: #17171745;
     overflow: hidden;  
-    position: fixed; /* 使导航栏固定在顶部 */  
+    position: fixed; /* 固定顶部 */  
     top: 0;  
     width: 100%;  
-    z-index: 114513; /* 确保导航栏在其他内容上 （ */  
+    z-index: 114513; /* 臭 */  
     display: flex; /* 使用flex布局 */  
     align-items: center; /* 垂直居中对齐 */  
     padding: 0 50px;  
     height: 90px;       /*宽*/
+    
 }  
   
-/* 设置导航栏列表的样式 */  
-.navbar2-list {  
+  
+.navbar2-list {  /* 设置导航栏列表的样式 */
     display: flex;  
     justify-content: flex-start; /* 让列表项从左侧开始排列 */  
 }  
   
-/* 导航栏样式 */  
+/* 导航项间距 */  
 .navbar2-item {  
-    padding: 45px 30px; /* 调整内边距以控制导航项之间的间距 */  
+    padding: 45px 30px; 
 }  
   
 /* 按钮 */  
@@ -31,10 +32,9 @@
     transition: background-color 0.5s, color 0.5s; /* 添加颜色过渡效果 */  
 }  
   
-/* 鼠标悬停 */  
+/* 鼠标悬停条件 */  
 .navbar2-item a:hover {  
     color: #ff6700;  
-    /* 如果你还希望在悬停时改变背景色，可以在这里添加 background-color 属性 */  
 }  
   
 main {  
@@ -44,10 +44,10 @@ main {
   
 .navbar2-logo {  
     flex-shrink: 0; /* 防止logo在导航栏宽度不足时缩小 */  
-    margin-right: 25px; /* 可选：为logo和导航项之间添加一些间距 */  
+    margin-right: 25px; /* logo和导航项间距 */  
 }  
   
 .navbar2-logo img {  
-    height: 40px; /* 根据你的logo图像大小调整 */  
+    height: 40px; /* logo图像大小调整 */  
     width: auto;  
 }
