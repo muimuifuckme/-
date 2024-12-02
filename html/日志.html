@@ -19,7 +19,6 @@ body {
     background-color: #f7f7f7; 
     color: #333;  
 }  
-  
 header {  
     background: #ffffff; 
     color: #333333;  
@@ -27,19 +26,16 @@ header {
     text-align: center;  
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
 }  
-  
 header h1 {  
     margin: 0;  
     font-size: 2rem;  
     font-weight: normal;  
 }  
-  
 header p {  
     margin: 0.5rem 0 0;  
     font-size: 1rem;  
     color: #999999;   
 }  
-  
 main {  
     padding: 2rem;  
     max-width: 800px;  
@@ -48,12 +44,10 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
     border-radius: 4px; 
 }  
-  
-.update-log {  
+.up-log {  
     margin-bottom: 2rem;  
 }  
-  
-.update-log h2 {  
+.up-log h2 {  
     color: #1877f2;
     border-bottom: 1px solid #e5e5e5; 
     display: inline-block;  
@@ -61,20 +55,17 @@ main {
     margin-bottom: 1rem;  
     font-weight: normal; 
 }  
-  
-.update-log ul {  
+.up-log ul {  
     list-style-type: none; 
     padding-left: 0;  
 }  
-  
-.update-log li {  
+.up-log li {  
     margin-bottom: 0.5rem;  
     position: relative;  
     padding-left: 1.5rem;  
     color: #666666; 
 }  
-  
-.update-log li::before {  
+.up-log li::before {  
     content: '';  
     position: absolute;  
     left: 0;  
@@ -84,13 +75,11 @@ main {
     background-color: #1877f2;
     border-radius: 50%; 
 }
-  
-    footer {  
+footer {  
     text-align: center;  
     padding: 1rem 0;  
     background: #ff730098;   
     color: #fff;  
-    position: fixed;  
     width: 100%;  
     bottom: 0;  
     border-top: 2px solid #fff; 
@@ -101,7 +90,18 @@ main {
     <h1>更新日志</h1>  
     <p>记录所有变更</p>  
 </header>
-<section class="update-log">  
+<section class="up-log"> 
+    <h3>V1.0</h3>  
+    <ul>  
+        <li>重构网站结构</li>
+        <li>新增分区</li>
+        <li>增加首页js文字动画</li>
+        <li>增加首页内容板块</li> 
+        <li>优化了Ciallo动画的位置逻辑</li>
+        <li>优化部分交互动画</li>
+        <li>内容调整</li>
+    </ul>
+    
     <h3>V0.62</h3>  
     <ul>  
         <li>增加卡片</li> 
@@ -129,7 +129,7 @@ main {
 
 </section>
 <footer>  
-    <p>排版抄的同学ppt 认真你就输了</p>  
+    <p>排版来自小米 认真你就输了（</p>  
 </footer>
 </body>
 </html>
