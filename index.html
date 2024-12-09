@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"> <!-- 视口设置 -->  
@@ -9,78 +8,113 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"> <!-- 禁止页面转应用 -->  
     <meta name="referrer" content="no-referrer"> <!-- 不发送Referer头防曝光 --> 
     <meta name="description" content="认真你就输了">  <!--搜索引擎关键词-->
-    <title>傲娇博客</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css\styles.css">
-    <link rel="stylesheet" type="text/css" href="css\nav.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="font/iconfont.css">
-    <script src="js\sy-nav.js"></script>
-    <script src="js\Ciallo～(∠・ω・ )⌒★.js"></script>
-    <script src="js\社死の声音.js"></script>
+    <title>傲娇bolg</title>
+    <link rel="shortcut icon" href="static\piuter\favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="static\css\styles.css">
+    <link rel="stylesheet" type="text/css" href="static\css\nav.css">
+    <link rel="stylesheet" href="static\menu.css">
+    <link rel="stylesheet" href="static\font/iconfont.css">
+    <script src="static\js\Ciallo～(∠・ω・ )⌒★.js"></script>
+    <script src="static\js\社死の声音.js"></script>
+    <script src="static\js\sy-nav.js"></script>
+    <script src="static\js\提示.js"></script>
+    <script src="static\js\公告.js"></script>
 </head>
 <body>
-<div>
-    <!--     你知道我曾经有两个导航栏吗？      -->
-    <nav class="nav"> 
-        <div class="nav-logo">  
-            <a href="#home"><img src="piuter\logo.png" alt="网站Logo"></a>  
-        </div> 
-        <ul class="nav-li">  
-            <li class="nav-it-em"><a href="">首页</a></li>  
-            <li class="nav-it-em"><a href="没有">动态</a></li>  
-            <li class="nav-it-em"><a href="没有">资源库</a></li>  
-            <li class="nav-it-em"><a href="没有">小工具</a></li>  
-            <li class="nav-it-em"><a href="">开源鸣谢</a></li>
-            <li class="nav-it-em"><a href="html\日志.html" title="更新日志" target="_blank">日志</a></li>  
-        </ul>  
-    </nav>
+<div id="sy-0">
+    <div class="sy-0-gg">
+        <h1>我是公告君</h1>
+        <br>
+        <p>ようこそこんにちは!</p>
+        <p>请务必在<red>pc</red>端全屏展开！因为还没写不同比例下的显示规则...</p>
+        <p>右下角的<pick style="color: plum;">びしょじょ</pick>是置顶键</p>
+        <del style="color: blueviolet;"><p style="color: pink;">还有如果不怕就请<orange>音量100%</orange></p></del>
+        <br>
+        <br>
+        <span class="close-btn" onclick="closeAnnouncement()">&times;</span>
+    </div>
 </div>
+<gobalck id="backToTop" class="backToTop"></gobalck>
+<script src="static\js\close.js"></script>
+
+<div id="进度条" class="进度条"></div>
+<script src="static\js\进度条.js"></script>
+<!--     你知道我曾经有两个导航栏吗？      -->
+<nav>
+    <div class="nav-logo">  
+        <a href=""><img src="static\piuter\nav-logo.png" alt="网站Logo"></a>  
+    </div>
+    <a href="" target="_blank">首页</a>
+    <a  target="_blank">动态</a>
+    <a  target="_blank">资源库</a>
+    <a  target="_blank">小工具</a>
+    <a  target="_blank">开源鸣谢</a>
+    <a href="static\html\日志.html" target="_blank">日志</a>
+    <a href="static\html\登录.html" target="_blank" class="nav-up">登录</a>
+    <a onclick="sc()">收藏</a>
+</nav>
 <div class="sy-1">
     <div class="sy-1-p">
         <h3><strong class="sy-1-txt sy-1-txt-1">Ciallo～(∠・ω< )⌒★</strong></h3><br>
         <strong id="txt" class="sy-1-txt sy-1-txt-2"></strong>
-        <script src="js\sy.js"></script>
+        <script src="static\js\sy.js"></script>
     </div>
 </div>
 
 <div class="sy-2">
     <div class="sy-2-card1">
-        <div class="sy-2-card1-p">
-            <img src="piuter\1.png" alt="up头像" class="sy-2-card1-p">
-        </div>
-        <br>
-        <br>
+        <img src="static\piuter\0.png" alt="up头像" class="sy-2-card1-p">
         傲娇
-        <a href="https://space.bilibili.com/447746507" target="_blank"></a>
+        <a href="https://space.bilibili.com/447746507" alt="up空间" target="_blank"></a>
     </div>
-    <div class="sy-2-card2-区域">
-        <div class="sy-2-card2-区域上">
-            <div class="sy-2-card2">
-                <img src="piuter/2.png" alt="1" class="sy-2-card2-p">
-            </div>
-            <div class="sy-2-card2">
-            </div>
+    <div class="sy-2-card2-大区域">
+        <div class="sy-2-card2-小区域">
+            <a href=""><div class="sy-2-card2">
+                <img src="static\piuter/1.png" alt="1" class="sy-2-card2-p1">
+                <h3>没有东西</h3>
+                <txt class="sy-2-card2-txt">2077-13-32</txt>
+            </div></a>
+            <a href=""><div class="sy-2-card2">
+                <img src="static\piuter/2.jpg" alt="2" class="sy-2-card2-p1">
+                <h3>没有东西</h3>
+                <txt class="sy-2-card2-txt">2077-13-32</txt>
+            </div></a>
         </div>
-        <div class="sy-2-card2-区域下">
-            <div class="sy-2-card2">
-            </div>
-            <div class="sy-2-card2">
-            </div>
+        <div class="sy-2-card2-小区域 sy-2-card2-小区域补丁">
+            <a href=""><div class="sy-2-card2">
+                <img src="static\piuter/3.png" alt="3" class="sy-2-card2-p2">
+                <h3>没有东西</h3>
+                <txt class="sy-2-card2-txt">2077-13-32</txt>
+            </div></a>
+            <a href="static\html\作业.html" target="_blank">
+                <div class="sy-2-card2">
+                    <img src="static\piuter\作业.png" alt="4" class="sy-2-card2-p2">
+                    <h3>新年作业</h3>
+                    <txt class="sy-2-card2-txt">2024-12-4</txt>
+               </div>
+            </a>
         </div>
     </div>
 </div>
-114514<br>
-114514<br>
-114514<br>
-114514<br>
+<div class="sy-3">
+    <div class="sy-3-lb">
+        <video src='static\video\ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ.mp4' loop controls class="sy-3-lb-1"></video>
+        <div class="sy-3-lb-2">
+            <div class="sy-3-lb-2-1"></div>
+        </div>
+    </div>
 </div>
 
 
-    <audio id="audioPlayer" src="static\ciallo.aac" preload="auto"></audio>
 
-    <!--<footer>
-        <p><a href="https://www.mihoyo.com/company/jubao">mhy保留所有权利.</a></p>
-    </footer>-->
+
+
+
+<audio id="audioPlayer" src="static\sound\ciallo.aac" preload="auto"></audio>
+
+    <footer>
+        <div class="footer-div"></div>
+        制作➡ <a href="https://space.bilibili.com/447746507" alt="up空间" target="_blank" class="footer-a">某不知名傲娇</a>
+    </footer>
 </body>
 </html>
